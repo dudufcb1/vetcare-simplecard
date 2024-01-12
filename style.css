@@ -28,6 +28,11 @@ button {
   cursor: pointer;
 }
 
+button:hover {
+  box-shadow: none;
+  opacity: 0.8;
+}
+
 .card {
   width: 100%;
   display: flex;
