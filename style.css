@@ -1,0 +1,119 @@
+/** @format */
+/* Reset de box-sizing */
+* {
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Karla", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Establece la altura mínima al 100% del viewport */
+}
+
+button {
+  border: none;
+  background-color: #30618c;
+  color: #f2e4dc;
+  font-size: 0.8rem;
+  padding: 5px;
+  width: 100%;
+  border-radius: 4px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 0px 4px 4px rgba(48, 97, 140, 0.12);
+  -webkit-box-shadow: -3px -1px 4px 4px rgba(48, 97, 140, 0.12);
+  -moz-box-shadow: -3px -1px 4px 4px rgba(48, 97, 140, 0.12);
+  border-radius: 5px;
+}
+
+.card p {
+  color: #30618c;
+}
+.top {
+  width: 90%;
+  padding: 20px;
+  border-color: #f2f2f2;
+}
+.top h2,
+.top h4 {
+  margin-bottom: 20px;
+  color: #0476d9;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.bottom h4 {
+  color: #0476d9;
+  margin-bottom: 20px;
+}
+
+.bottom ul {
+  font-size: 0.8rem;
+  list-style: none;
+  color: #30618c;
+  padding: 0px;
+}
+.bottom-left {
+  background-color: #30d9d9;
+  padding: 20px;
+}
+.bottom-left p {
+  margin-bottom: 20px;
+}
+.price {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.price-number {
+  margin-right: 20px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #30618c;
+}
+.duracion-suscripcion {
+  color: #30618c;
+  opacity: 0.8;
+}
+
+.bottom-right {
+  background-color: #f2e4dc;
+  padding: 20px;
+}
+
+@media (min-width: 576px) {
+  .card {
+    width: 550px;
+    height: 400px;
+    display: flex;
+  }
+  .top {
+    height: 35%;
+  }
+  .bottom {
+    height: 65%;
+    display: flex;
+    flex-direction: row;
+  }
+  .bottom-left,
+  .bottom-right {
+    width: 50%;
+    height: auto;
+  }
+}
